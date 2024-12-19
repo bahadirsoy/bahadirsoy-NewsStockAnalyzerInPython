@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e11217c5-2e00-4fd8-9d25-e72c8d331dee" name="Changes" comment="Scrape financial news articles">
-      <change afterPath="$PROJECT_DIR$/scraper.py" afterDir="false" />
+    <list default="true" id="e11217c5-2e00-4fd8-9d25-e72c8d331dee" name="Changes" comment="Create scraper.py">
+      <change afterPath="$PROJECT_DIR$/ner_extractor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -51,6 +51,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.main.executor": "Run",
+    "Python.ner_extractor.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "com.codeium.enabled": "true",
@@ -90,12 +91,21 @@
       <option name="project" value="LOCAL" />
       <updated>1734610370877</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Create scraper.py">
+      <option name="closed" value="true" />
+      <created>1734611317627</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1734611317627</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="python version update" />
     <MESSAGE value="Scrape financial news articles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Scrape financial news articles" />
+    <MESSAGE value="Create scraper.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create scraper.py" />
   </component>
 </project>
