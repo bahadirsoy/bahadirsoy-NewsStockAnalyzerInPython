@@ -1,8 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
-from ner_extractor import extract_companies
+from ner_extractor import extract_company
 
-def scrape_and_return(max_articles=3):
+# Scrape and process the data
+def scrapeData(max_articles=3):
     # URL to scrape
     url = "https://finance.yahoo.com/"
 
@@ -37,14 +38,14 @@ def scrape_and_return(max_articles=3):
         article_text = " ".join([p.text for p in p_elements])
 
         # Extract company names with the NER model
-        company_names = extract_companies(article_text)
+        company = extract_company(article_title, article_text)
 
         # Append the data as a dictionary to the list
         articles_data.append({
             "title": article_title,
             "text": article_text,
             "link": article_link,
-            "companies": company_names
+            "company": company
         })
 
     return articles_data

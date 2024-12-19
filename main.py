@@ -1,6 +1,5 @@
-from scraper import scrape_and_return
-from ner_extractor import extract_companies
+from scraper import scrapeData
 
 # Get articles
-articles = scrape_and_return()
+articles = scrapeData()
 print(articles)
