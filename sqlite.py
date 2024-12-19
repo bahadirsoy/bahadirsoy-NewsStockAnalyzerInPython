@@ -31,3 +31,14 @@ def store_in_database(articles_data):
 
     conn.commit()
     conn.close()
+
+
+def get_all_articles():
+    conn = sqlite3.connect("news_stock_analyzer.db")
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT * FROM articles")
+    rows = cursor.fetchall()
+
+    conn.close()
+    return rows

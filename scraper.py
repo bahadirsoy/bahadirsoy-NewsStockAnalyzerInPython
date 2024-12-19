@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from ner_extractor import extract_company
 from sentiment_analysis import analyze_sentiment
+from sqlite import store_in_database
 
 # Scrape and process the data
 def scrapeData(max_articles=3):
@@ -52,5 +53,8 @@ def scrapeData(max_articles=3):
             "company": company,
             "sentiment": sentiment
         })
+
+        # Insert the data into the database
+        store_in_database(articles_data)
 
     return articles_data

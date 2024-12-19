@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e11217c5-2e00-4fd8-9d25-e72c8d331dee" name="Changes" comment="sentiment analysis character limit. sentiment analysis applied in scraper">
-      <change afterPath="$PROJECT_DIR$/sqlite.py" afterDir="false" />
+    <list default="true" id="e11217c5-2e00-4fd8-9d25-e72c8d331dee" name="Changes" comment="sqlite is added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraper.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734643372098</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="sqlite is added">
+      <option name="closed" value="true" />
+      <created>1734647956114</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1734647956114</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -151,6 +160,7 @@
     <MESSAGE value="only one company name is returned. different model is implemented" />
     <MESSAGE value="sentiment analysis model is created" />
     <MESSAGE value="sentiment analysis character limit. sentiment analysis applied in scraper" />
-    <option name="LAST_COMMIT_MESSAGE" value="sentiment analysis character limit. sentiment analysis applied in scraper" />
+    <MESSAGE value="sqlite is added" />
+    <option name="LAST_COMMIT_MESSAGE" value="sqlite is added" />
   </component>
 </project>
