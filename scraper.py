@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+from ner_extractor import extract_companies
 
 def scrape_and_return(max_articles=3):
     # URL to scrape
@@ -35,11 +36,15 @@ def scrape_and_return(max_articles=3):
         p_elements = article_content.find_all("p")
         article_text = " ".join([p.text for p in p_elements])
 
+        # Extract company names with the NER model
+        company_names = extract_companies(article_text)
+
         # Append the data as a dictionary to the list
         articles_data.append({
             "title": article_title,
             "text": article_text,
-            "link": article_link
+            "link": article_link,
+            "companies": company_names
         })
 
     return articles_data
