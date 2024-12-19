@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from ner_extractor import extract_company
+from sentiment_analysis import analyze_sentiment
 
 # Scrape and process the data
 def scrapeData(max_articles=3):
@@ -40,12 +41,16 @@ def scrapeData(max_articles=3):
         # Extract company names with the NER model
         company = extract_company(article_title, article_text)
 
+        # Analyze the sentiment of the article
+        sentiment = analyze_sentiment(article_text)
+
         # Append the data as a dictionary to the list
         articles_data.append({
             "title": article_title,
             "text": article_text,
             "link": article_link,
-            "company": company
+            "company": company,
+            "sentiment": sentiment
         })
 
     return articles_data
