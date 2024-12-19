@@ -1,7 +1,7 @@
 import sqlite3
 
 # Create SQLite database and table
-def create_database():
+def create_articles_table():
     conn = sqlite3.connect("news_stock_analyzer.db")
     cursor = conn.cursor()
 
@@ -10,7 +10,6 @@ def create_database():
                         id INTEGER PRIMARY KEY,
                         title TEXT,
                         text TEXT,
-                        link TEXT,
                         company TEXT,
                         sentiment TEXT)''')
 
@@ -25,9 +24,9 @@ def store_in_database(articles_data):
 
     # Insert data into the articles table
     for article in articles_data:
-        cursor.execute('''INSERT INTO articles (title, text, link, company, sentiment)
-                          VALUES (?, ?, ?, ?, ?)''',
-                       (article["title"], article["text"], article["link"], article["company"], article["sentiment"]))
+        cursor.execute('''INSERT INTO articles (title, text, company, sentiment)
+                          VALUES (?, ?, ?, ?)''',
+                       (article["title"], article["text"], article["company"], article["sentiment"]))
 
     conn.commit()
     conn.close()
@@ -42,3 +41,15 @@ def get_all_articles():
 
     conn.close()
     return rows
+
+def drop_articles_table():
+    conn = sqlite3.connect("news_stock_analyzer.db")
+    cursor = conn.cursor()
+
+    cursor.execute("DROP TABLE IF EXISTS articles")
+
+    conn.commit()
+    conn.close()
+
+allArticles = get_all_articles()
+print(allArticles)

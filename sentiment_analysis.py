@@ -10,4 +10,4 @@ def analyze_sentiment(text):
         text = text[:max_length]
 
     sentiment = nlp_sentiment(text)
-    return sentiment
+    return sentiment[0]["label"]
