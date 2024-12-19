@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e11217c5-2e00-4fd8-9d25-e72c8d331dee" name="Changes" comment="companies is added to scraper return object">
+    <list default="true" id="e11217c5-2e00-4fd8-9d25-e72c8d331dee" name="Changes" comment="only one company name is returned. different model is implemented">
+      <change afterPath="$PROJECT_DIR$/sentiment_analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ner_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ner_extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraper.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +51,7 @@
   "keyToString": {
     "Python.main.executor": "Run",
     "Python.ner_extractor.executor": "Run",
+    "Python.sentiment_analysis.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "com.codeium.enabled": "true",
@@ -116,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734634011026</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="only one company name is returned. different model is implemented">
+      <option name="closed" value="true" />
+      <created>1734637542756</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1734637542756</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -125,6 +132,7 @@
     <MESSAGE value="Create scraper.py" />
     <MESSAGE value="ner model is added" />
     <MESSAGE value="companies is added to scraper return object" />
-    <option name="LAST_COMMIT_MESSAGE" value="companies is added to scraper return object" />
+    <MESSAGE value="only one company name is returned. different model is implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="only one company name is returned. different model is implemented" />
   </component>
 </project>
