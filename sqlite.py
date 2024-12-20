@@ -1,8 +1,12 @@
 import sqlite3
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Create SQLite database and table
 def create_articles_table():
-    conn = sqlite3.connect("news_stock_analyzer.db")
+    conn = sqlite3.connect(os.getenv("DATABASE_NAME"))
     cursor = conn.cursor()
 
     # Create table if not exists
@@ -20,7 +24,7 @@ def create_articles_table():
 
 # Store the scraped and analyzed data
 def store_in_database(articles_data):
-    conn = sqlite3.connect("news_stock_analyzer.db")
+    conn = sqlite3.connect(os.getenv("DATABASE_NAME"))
     cursor = conn.cursor()
 
     # Insert data into the articles table
@@ -34,7 +38,7 @@ def store_in_database(articles_data):
 
 
 def get_all_articles():
-    conn = sqlite3.connect("news_stock_analyzer.db")
+    conn = sqlite3.connect(os.getenv("DATABASE_NAME"))
     cursor = conn.cursor()
 
     cursor.execute("SELECT * FROM articles")
@@ -44,10 +48,13 @@ def get_all_articles():
     return rows
 
 def drop_articles_table():
-    conn = sqlite3.connect("news_stock_analyzer.db")
+    conn = sqlite3.connect(os.getenv("DATABASE_NAME"))
     cursor = conn.cursor()
 
     cursor.execute("DROP TABLE IF EXISTS articles")
 
     conn.commit()
     conn.close()
+
+allArticles = get_all_articles()
+print(allArticles)

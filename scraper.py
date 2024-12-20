@@ -1,11 +1,15 @@
 import requests
+import os
+from dotenv import load_dotenv
 from bs4 import BeautifulSoup
 from ner_extractor import extract_company
 from sentiment_analysis import analyze_sentiment
 from sqlite import store_in_database
 
+load_dotenv()
+
 # Scrape and process the data
-def scrapeData(max_articles=5):
+def scrapeData(max_articles=int(os.getenv("MAX_ARTICLES"))):
     # URL to scrape
     url = "https://finance.yahoo.com/"
 
