@@ -35,6 +35,10 @@ def scrapeData(max_articles=5):
         # Find the article content
         article_content = article_soup.find("div", class_="body")
         if article_content is None:
+            # Check for the second scenario with 'data-article-body="true"'
+            article_content = article_soup.find("div", {"data-article-body": "true"})
+
+        if article_content is None:
             print("No content found for article:", article_title)
             continue
 
