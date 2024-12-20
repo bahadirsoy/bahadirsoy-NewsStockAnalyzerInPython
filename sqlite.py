@@ -11,7 +11,8 @@ def create_articles_table():
                         title TEXT,
                         text TEXT,
                         company TEXT,
-                        sentiment TEXT)''')
+                        sentiment TEXT,
+                        date TEXT)''')
 
     conn.commit()
     conn.close()
@@ -24,9 +25,9 @@ def store_in_database(articles_data):
 
     # Insert data into the articles table
     for article in articles_data:
-        cursor.execute('''INSERT INTO articles (title, text, company, sentiment)
-                          VALUES (?, ?, ?, ?)''',
-                       (article["title"], article["text"], article["company"], article["sentiment"]))
+        cursor.execute('''INSERT INTO articles (title, text, company, sentiment, date)
+                                  VALUES (?, ?, ?, ?, ?)''',
+                       (article["title"], article["text"], article["company"], article["sentiment"], article["date"]))
 
     conn.commit()
     conn.close()
@@ -52,4 +53,4 @@ def drop_articles_table():
     conn.close()
 
 allArticles = get_all_articles()
-print(allArticles)
+# print(allArticles)

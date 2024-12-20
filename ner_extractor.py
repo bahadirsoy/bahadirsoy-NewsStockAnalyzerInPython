@@ -37,7 +37,7 @@ def extract_single_company_from_ner(title, ner_results):
 
 def extract_company(title, text):
     ner_results = nlp_ner(text)
-    print(ner_results)
+    # print(ner_results)
 
     company = extract_single_company_from_ner(title, ner_results)
 

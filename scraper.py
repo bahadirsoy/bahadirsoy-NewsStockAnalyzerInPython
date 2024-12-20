@@ -5,7 +5,7 @@ from sentiment_analysis import analyze_sentiment
 from sqlite import store_in_database
 
 # Scrape and process the data
-def scrapeData(max_articles=3):
+def scrapeData(max_articles=5):
     # URL to scrape
     url = "https://finance.yahoo.com/"
 
@@ -34,6 +34,9 @@ def scrapeData(max_articles=3):
 
         # Find the article content
         article_content = article_soup.find("div", class_="body")
+        if article_content is None:
+            print("No content found for article:", article_title)
+            continue
 
         # Get all p elements and concat the strings
         p_elements = article_content.find_all("p")
@@ -45,13 +48,21 @@ def scrapeData(max_articles=3):
         # Analyze the sentiment of the article
         sentiment = analyze_sentiment(article_text)
 
+        # Extract the publication date
+        time_tag = article_soup.find("time", class_="byline-attr-meta-time")
+        if time_tag and "datetime" in time_tag.attrs:
+            article_date = time_tag["datetime"].split("T")[0]  # Extract only the date part (YYYY-MM-DD)
+        else:
+            article_date = None
+
         # Append the data as a dictionary to the list
         articles_data.append({
             "title": article_title,
             "text": article_text,
             "link": article_link,
             "company": company,
-            "sentiment": sentiment
+            "sentiment": sentiment,
+            "date": article_date
         })
 
         # Insert the data into the database
