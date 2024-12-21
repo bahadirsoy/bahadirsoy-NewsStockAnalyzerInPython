@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e11217c5-2e00-4fd8-9d25-e72c8d331dee" name="Changes" comment="export to csv is added">
+    <list default="true" id="e11217c5-2e00-4fd8-9d25-e72c8d331dee" name="Changes" comment="debug condition added">
       <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ner_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ner_extractor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraper.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734771647089</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="debug condition added">
+      <option name="closed" value="true" />
+      <created>1734772338360</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1734772338360</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -219,6 +226,7 @@
     <MESSAGE value="news article content scraper update" />
     <MESSAGE value=".env is added" />
     <MESSAGE value="export to csv is added" />
-    <option name="LAST_COMMIT_MESSAGE" value="export to csv is added" />
+    <MESSAGE value="debug condition added" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug condition added" />
   </component>
 </project>

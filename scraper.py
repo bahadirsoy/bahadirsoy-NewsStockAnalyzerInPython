@@ -15,6 +15,9 @@ def scrapeData(max_articles=int(os.getenv("MAX_ARTICLES"))):
 
     # Send a GET request to the website
     response = requests.get(url)
+    if response.status_code != 200:
+        print(f"Error: {response.status_code}")
+        return
     soup = BeautifulSoup(response.content, "html.parser")
 
     # Find all the news articles
