@@ -55,6 +55,3 @@ def drop_articles_table():
 
     conn.commit()
     conn.close()
-
-allArticles = get_all_articles()
-print(allArticles)

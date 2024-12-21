@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e11217c5-2e00-4fd8-9d25-e72c8d331dee" name="Changes" comment="news article content scraper update">
+    <list default="true" id="e11217c5-2e00-4fd8-9d25-e72c8d331dee" name="Changes" comment=".env is added">
       <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/export_to_csv.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ner_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ner_extractor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sqlite.py" beforeDir="false" afterPath="$PROJECT_DIR$/sqlite.py" afterDir="false" />
     </list>
@@ -49,21 +52,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Python.main.executor": "Run",
-    "Python.ner_extractor.executor": "Run",
-    "Python.scraper.executor": "Run",
-    "Python.sentiment_analysis.executor": "Run",
-    "Python.sqlite.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.codeium.enabled": "true",
-    "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Python.export_to_csv.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ner_extractor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scraper.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sentiment_analysis.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sqlite.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -184,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734738190266</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary=".env is added">
+      <option name="closed" value="true" />
+      <created>1734739091848</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1734739091848</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -201,6 +213,7 @@
     <MESSAGE value="drop table before creating." />
     <MESSAGE value="date of the article is added. bug fixes" />
     <MESSAGE value="news article content scraper update" />
-    <option name="LAST_COMMIT_MESSAGE" value="news article content scraper update" />
+    <MESSAGE value=".env is added" />
+    <option name="LAST_COMMIT_MESSAGE" value=".env is added" />
   </component>
 </project>

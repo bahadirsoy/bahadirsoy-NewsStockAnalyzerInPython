@@ -43,7 +43,7 @@ def scrapeData(max_articles=int(os.getenv("MAX_ARTICLES"))):
             article_content = article_soup.find("div", {"data-article-body": "true"})
 
         if article_content is None:
-            print("No content found for article:", article_title)
+            if os.getenv("DEBUG") == "true": print("No content found for article:", article_title)
             continue
 
         # Get all p elements and concat the strings
@@ -72,6 +72,16 @@ def scrapeData(max_articles=int(os.getenv("MAX_ARTICLES"))):
             "sentiment": sentiment,
             "date": article_date
         })
+
+        # Print the article
+        if os.getenv("DEBUG") == "true":
+            print(f"Article {i + 1}: {article_title}"
+                  f"\nText: {article_text}"
+                  f"\nLink: {article_link}"
+                  f"\nCompany: {company}"
+                  f"\nSentiment: {sentiment}"
+                  f"\nDate: {article_date}\n")
+            print("-" * 50)
 
         # Insert the data into the database
         store_in_database(articles_data)

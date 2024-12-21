@@ -12,7 +12,11 @@ nlp_ner = pipeline("ner", model=model, tokenizer=tokenizer)
 
 def extract_single_company_from_ner(title, ner_results):
     # Check if the title mentioned a company
-    title_companies = [entity["word"] for entity in ner_results if "ORG" in entity["entity"]]
+    title_companies = [
+        entity["word"]
+        for entity in ner_results
+        if "ORG" in entity["entity"]
+    ]
 
     # If companies are found in the title, return the first one
     if title_companies:
