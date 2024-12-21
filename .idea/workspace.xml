@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e11217c5-2e00-4fd8-9d25-e72c8d331dee" name="Changes" comment=".env is added">
+    <list default="true" id="e11217c5-2e00-4fd8-9d25-e72c8d331dee" name="Changes" comment="export to csv is added">
       <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/export_to_csv.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ner_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ner_extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlite.py" beforeDir="false" afterPath="$PROJECT_DIR$/sqlite.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734739091848</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="export to csv is added">
+      <option name="closed" value="true" />
+      <created>1734771647089</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1734771647089</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -214,6 +218,7 @@
     <MESSAGE value="date of the article is added. bug fixes" />
     <MESSAGE value="news article content scraper update" />
     <MESSAGE value=".env is added" />
-    <option name="LAST_COMMIT_MESSAGE" value=".env is added" />
+    <MESSAGE value="export to csv is added" />
+    <option name="LAST_COMMIT_MESSAGE" value="export to csv is added" />
   </component>
 </project>

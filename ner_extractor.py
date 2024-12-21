@@ -1,5 +1,7 @@
 from transformers import BertTokenizer, BertForTokenClassification
 from transformers import pipeline
+import os
+from dotenv import load_dotenv
 
 # Load the model
 model_name = "dslim/bert-base-NER"
@@ -41,7 +43,7 @@ def extract_single_company_from_ner(title, ner_results):
 
 def extract_company(title, text):
     ner_results = nlp_ner(text)
-    # print(ner_results)
+    if os.getenv("DEBUG") == "true": print(ner_results)
 
     company = extract_single_company_from_ner(title, ner_results)
 
