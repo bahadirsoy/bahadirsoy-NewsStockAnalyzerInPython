@@ -1,6 +1,11 @@
 from scraper import scrapeData
-from sqlite import create_articles_table, drop_articles_table
+from sqlite import create_articles_table, drop_articles_table, get_all_articles
 from export_to_csv import export_to_csv
+
+# Get all articles and print
+# all_articles = get_all_articles()
+# print(all_articles)
+# exit(0)
 
 # Create SQLite database and table
 drop_articles_table()

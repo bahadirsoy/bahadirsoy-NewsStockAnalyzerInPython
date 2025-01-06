@@ -86,7 +86,7 @@ def scrapeData(max_articles=int(os.getenv("MAX_ARTICLES"))):
                   f"\nDate: {article_date}\n")
             print("-" * 50)
 
-        # Insert the data into the database
-        store_in_database(articles_data)
+    # Insert the data into the database
+    store_in_database(articles_data)
 
     return articles_data
